@@ -157,6 +157,7 @@ img {
     width: 100%;
     height: 100%;
     position: relative
+    
 }
 .flowtime {
     font-size: 0;
@@ -180,7 +181,15 @@ img {
 }
 .ft-section {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0)
+            transform: translateZ(0);
+            
+}
+
+.past-section > img{
+    border-radius: 24px !important;
+}
+.ft-page{
+    border-radius: 24px !important;
 }
 .ft-section,
 .ft-section-thumb {
@@ -196,11 +205,16 @@ img {
     -ms-transform: translateZ(0);
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    border-radius: 100px;
+    border-radius: 12vh !important;
+    overflow: hidden;
+    
+    
 }
 
 .ft-page img {
     object-fit: cover;
+    border-radius: 0 !important;
+    
 }
 .ft-page.actual {
     z-index: 100
@@ -292,9 +306,9 @@ img {
 html {
     font-size: 100%;
     line-height: 1.5rem;
-    background-color: #aaa;
+    background-image: linear-gradient(110deg, #ffadff, #fd5efd);
     color: #6e2d52;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, .4)
+   
 }
 .flowtime .attention,
 .flowtime strong {
@@ -312,7 +326,22 @@ button {
 .ft-page {
     padding: 1em;
     background-color: #fed1ea;
-    text-align: center
+    text-align: center;
+       
+}
+.GDSC{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 60px;
+    color: #000000;
+}
+.flowtime{
+    position: relative;
+    z-index: 3;
 }
 .flowtime dd,
 .flowtime dl,
@@ -571,7 +600,7 @@ button {
     margin-top: 0
 }
 .ft-page-thumb {
-    background-color: #a54479
+    background-color: #dc80b2
 }
 .ft-page-thumb.actual {
     background-color: #44a54a;
