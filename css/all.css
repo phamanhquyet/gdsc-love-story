@@ -144,6 +144,10 @@ html {
 }
 img {
     object-fit: cover;
+
+        height: 100%;
+        width:100%;
+
 }
 .nojavascript {
     position: fixed;
@@ -333,11 +337,13 @@ button {
     position: fixed;
     z-index: 2;
     top: 0;
-    left: 0;
+    left: -50%;
     right: 0;
     bottom: 0;
-    font-size: 60px;
+    font-size: 40px;
+    transform: translateX(50%);
     color: #000000;
+    font-family: 'Playpen Sans', cursive;
 }
 .flowtime{
     position: relative;
@@ -700,7 +706,7 @@ button {
     font-size: 1em
 }
 .page-1 img {
-    margin: 1em auto 0 1em
+    
 }
 .page-1 .text1 {
     font-size: 3em;
@@ -758,7 +764,7 @@ button {
     position: absolute;
     bottom: 0;
     left: 0;
-    max-width: 70%
+    max-width: 1000%
 }
 .page-6 h3 {
     position: absolute;
@@ -770,8 +776,8 @@ button {
     background-color: #e6fbec
 }
 .page-7 img {
-    max-height: 100%;
-    margin: 0 auto
+    height: 100%;
+    width: 100%;
 }
 .page-7 h3,
 .page-8 h3 {
@@ -806,33 +812,35 @@ button {
     background-color: #c9f4fb
 }
 .page-9 img {
-    margin-top: 3em
+    width: 100%;
+    height: 100%;
 }
-.page-10 {
-    background: url(../img/iali22_bg.jpg)
+.page-10 img{
+    /* background: url(../img/iali22_bg.jpg) */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .page-12 {
     background-color: #aff1ff;
     padding: 0
 }
 .page-12 img {
-    position: absolute;
-    bottom: 1em;
-    left: 1em;
-    z-index: 2;
-    height: 40%
+    object-fit: cover;
+    width: 100%;
+    height: 100%;   
 }
 .page-20 img,
 .page-28 img {
-    bottom: 0;
-    position: absolute
+
 }
 .page-13 {
     background-color: #feeff4;
     padding: 0
 }
 .page-13 img {
-    height: 80%
+    height: 100%;
+    width:100%;
 }
 .page-13 he {
     height: 20%
@@ -841,7 +849,7 @@ button {
     background-color: #fbf7d1
 }
 .page-15 {
-    background: url(../img/iali45_bg.jpg) #dcf2fa
+    /* background: url(../img/iali45_bg.jpg) #dcf2fa */
 }
 .page-16 {
     background-color: #7db6df
@@ -1031,9 +1039,7 @@ button {
 .page-43 {
     background-color: #6b79ad
 }
-.page-43 img {
-    max-height: 80%
-}
+
 .page-43 h2 {
     color: #fff
 }
@@ -1124,7 +1130,12 @@ button {
 }
 .page-55,
 .write-tip {
-    background-color: #fff
+    background-color: #fff;
+}
+
+.page-55 .text span{
+    position: relative;
+    z-index: 9999;
 }
 .page-54 .center-img {
     background-image: url(../img/319280.jpg);
